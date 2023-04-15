@@ -1,0 +1,151 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    max-width: 100%;
+    margin:2px solid black;
+}
+h1 {
+    font-size: 4em;
+    letter-spacing: .6em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+h2 {
+    font-size: 1.7em;
+    padding-bottom: 2em;
+}
+
+h3 {
+    font-size: 1em;
+    padding-bottom: 1em;
+}
+
+    main { 
+        display: grid;
+        grid-template-columns: 30% 70%;
+        margin-top: 0.5em;
+    }
+
+
+header {
+    text-align: center;
+    margin: auto 4em;
+}
+
+section {
+    margin: auto 1em 4em 2em;
+}
+
+i {
+    margin-right: .7em;
+}
+
+p {
+    margin: .4em auto
+}
+
+h1,h2 {
+    border:none;
+    background-color: lightgoldenrodyellow;
+    height: 2px;
+}
+
+h1, h2, h3 {
+    font-weight: 100;
+    margin-bottom: 1;
+}
+
+#mainLeft {
+    border-right: 1px solid lightgray;
+}
+#hover-before{
+    text-decoration:none;
+    font-size:20px;
+    color:black;
+}
+#hover-before:hover{
+    text-decoration:none;
+    font-size:30px;
+    color:darkred;
+}
+#para{
+    font-size:15px;
+}
+.image{
+    float:left;
+    margin-top:20px;
+    margin:inherit;
+}
+#certificate{
+    font-size:30px;
+    color:lightsalmon;
+}
+#cert-link{
+    text-decoration:none;
+    color:black;
+}
+#cert-link:hover{
+    font-size:25px;
+    color:yellowgreen;
+}
+#para2{
+    font-size:20px;
+    text-shadow: 20px;
+    text-emphasis-color: green;
+}
+
+
+.container {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.container span {
+    display: block;
+}
+
+.text1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background: black;
+    position: relative;
+    animation: text 3s 1;
+    border:none;
+    background-color: lightgoldenrodyellow;
+    height: 1px;
+}
+
+.text2 {
+    /* border:none;
+    background-color: lightgoldenrodyellow;
+    height: 1px; */
+    background-color: lightgoldenrodyellow;
+    font-size: 30px;
+    color: darkred;
+    font-family: Georgia, serif;
+}
+
+@keyframes text {
+    0% {
+        color: black;
+        margin-bottom: -40px;
+    }
+
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
