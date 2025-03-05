@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Coming Soon</title>
+</head>
+<body style="
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+">
+
+    <h1 style="
+        font-size: 3rem;
+        text-shadow: 0px 0px 10px #ff00ff, 0px 0px 20px #ff00ff;
+    "> Portfolio Coming Soon! </h1>
+
+    <p id="countdown" style="
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 10px;
+    "></p>
+
+    <p class="sub-text" style="
+        margin-top: 20px;
+        font-size: 1.2rem;
+    ">
+        Stay tuned! Connect with me on 
+        <a href="https://www.linkedin.com/in/jacob-george-02ba73237/" 
+        style="color: #ffcc00; text-decoration: none;">LinkedIn</a>.
+    </p>
+
+    <script>
+        function countdownTimer() {
+            let launchDate = new Date("April 1, 2025 00:00:00").getTime();
+
+            let timer = setInterval(function() {
+                let now = new Date().getTime();
+                let timeLeft = launchDate - now;
+
+                let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                document.getElementById("countdown").innerHTML = 
+                    `<span>${days}d ${hours}h ${minutes}m ${seconds}s</span>`;
+
+                if (timeLeft < 0) {
+                    clearInterval(timer);
+                    document.getElementById("countdown").innerHTML = "We're Live!";
+                }
+            }, 1000);
+        }
+        countdownTimer();
+    </script>
+
+</body>
+</html>
